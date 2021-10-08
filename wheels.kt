@@ -25,7 +25,7 @@ import com.team4099.lib.units.derived.radians
 import com.team4099.lib.units.derived.volts
 import com.team4099.lib.units.inFeetPerSecond
 import com.team4099.lib.units.perSecond
-import com.team4099.lib.units.sparkMaxAngularMechanismSensor
+import com.team4099.lib.units.spronkMaxAngularMechanismSensor
 import com.team4099.lib.units.sparkMaxLinearMechanismSensor
 import com.team4099.robot2021.config.Constants
 import edu.wpi.first.wpilibj.MedianFilter
