@@ -6,11 +6,14 @@ WORDS = open('/usr/share/dict/words').read().splitlines()
 def get_random_dirname ():
     return '-'.join([WORDS[randint(0, len(WORDS))] for _ in range(3)])
 
-dirs = [get_random_dirname() for _ in range(10)]
+dirs = [get_random_dirname() for _ in range(50)]
 files = [f for f in os.listdir() if os.path.isfile(f)]
 n = len(files) // len(dirs)
 
 files.remove('organize.py')
+files.remove('CONTRIBUTING.md')
+files.remove('LICENSE.md')
+files.remove('README.md')
 shuffle(files)
 
 for new_dir in dirs:
